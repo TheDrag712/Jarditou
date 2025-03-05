@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Acceuil</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/jarditou_logo.jpg"
+        alt="logo"
+        title="logo Jarditou"
+        height="100px"
+      />
+      <p>La qualité depuis 70 ans</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Acceuil</a></li>
+        <li><a href="tableau.html">Tableau</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="promotion">
+        <img
+          src="images/promotion.jpg"
+          alt="Promotion sur les lames de terrasse"
+          title="promotion sur les lames de terrasse"
+        />
+      </section>
+      <h2>Contact</h2>
+      <hr />
+      <section class="Formulaire">
+        <p>* Ces zones sont obligatoires</p>
+
+        <!-- Vos coordonnées -->
+        <form action="destination.php" method="post" id="formulaire_contact">
+          <fieldset>
+            <legend>Vos coordonnées</legend>
+            <!-- Nom et prénom -->
+            <label for="nom">Votre nom* : </label>
+            <input type="text" name="nom" /><br />
+            <label for="prenom">Votre prénom* : </label
+            ><input type="text" name="prenom" /><br />
+            <!-- Nom et prénom -->
+            <br />
+            <!-- sexe -->
+            <label for="sexe">Sexe* :</label
+            ><input type="radio" name="sexe" value="Feminin" />Féminin
+            <input type="radio" name="sexe" value="Masculin" />Masculin<br />
+            <!-- sexe -->
+            <br />
+            <!-- Date de naissance -->
+            <label for="birthday">Date de naissance* :</label>
+            <input type="date" name="date" /><br />
+            <!-- Date de naissance -->
+
+            <!-- Code postale -->
+            <label for="code_postale">Code postale* :</label>
+            <input type="text" name="code_postale" /><br />
+            <!-- Code postale -->
+
+            <!-- Adresse -->
+            <label for="adresse">Adresse* :</label>
+            <input type="text" name="Adresse" /><br />
+
+            <!-- Adresse -->
+
+            <!-- Ville -->
+            <label for="Ville">Ville* :</label>
+            <input type="text" name="Ville" /><br />
+
+            <!-- Ville -->
+
+            <!-- Email -->
+            <label for="email">Email* :</label>
+            <input type="text" name="email" placeholder="exemple@afpa.fr" />
+
+            <!-- Email -->
+          </fieldset>
+          <!-- Vos coordonnées -->
+          <br />
+          <!-- votre demande -->
+          <fieldset>
+            <legend>Votre demande</legend>
+            <!-- sujet -->
+            <label for="sujet">Sujet* :</label>
+            <select name="sujet">
+              <option value="Default" selected>
+                Veuillez sélectionner un sujet
+              </option>
+              <option value="Commandes">Mes commandes</option>
+              <option value="Produit">Question sur un produit</option>
+              <option value="Reclamation">Réclamation</option>
+              <option value="Autres">Autres</option>
+            </select>
+            <!-- sujet -->
+            <br />
+
+            <!-- votre question -->
+            <label for="question">Votre question* :</label>
+            <textarea name="question"> </textarea>
+            <!-- votre question -->
+          </fieldset>
+          <!-- votre demande -->
+
+          <br />
+          <!-- J'accepte les condition -->
+          <input type="checkbox" name="condition_generale" />* J'accepte le
+          traitement informatique de ce formulaire
+          <!-- J'accepte les condition -->
+
+          <br />
+          <br />
+          <!-- bouton de validation -->
+          <input type="submit" value="Envoyer" />
+          <input type="submit" value="Annuler" />
+          <!-- bouton de validation -->
+
+          <br />
+        </form>
+      </section>
+      <hr />
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Mention légales</a></li>
+        <li><a href="#">Horaires</a></li>
+        <li><a href="#">Plan du site</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
